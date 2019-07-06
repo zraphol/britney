@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url('fonts/AdobeCleanClean-Regular.eot');
+    src: local('Adobe Clean'), local('fonts/AdobeCleandobeClean-Regular'),
+        url('fonts/AdobeCleandobeClean-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleanClean-Regular.woff') format('woff'),
+        url('fonts/AdobeCleanClean-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Adobe Clean BoldSemi';
+    src: url('fonts/AdobeCleanClean-BoldSemiCnIt.eot');
+    src: local('Adobe Clean Bold SemiCondensed Italic'), local('fonts/AdobeCleanClean-BoldSemiCnIt'),
+        url('fonts/AdobeCleanClean-BoldSemiCnIt.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleanClean-BoldSemiCnIt.woff') format('woff'),
+        url('fonts/AdobeCleanClean-BoldSemiCnIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Adobe Clean SemiItalic';
+    src: url('fonts/AdobeCleanClean-SemiCnIt.eot');
+    src: local('Adobe Clean SemiCondensed Italic'), local('fonts/AdobeCleanClean-SemiCnIt'),
+        url('fonts/AdobeCleanClean-SemiCnIt.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleanClean-SemiCnIt.woff') format('woff'),
+        url('fonts/AdobeCleanClean-SemiCnIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Adobe Clean Bold';
+    src: url('fonts/AdobeCleanClean-BoldIt.eot');
+    src: local('Adobe Clean Bold Italic'), local('fonts/AdobeCleandobeClean-BoldIt'),
+        url('fonts/AdobeCleandobeClean-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleandobeClean-BoldIt.woff') format('woff'),
+        url('fonts/AdobeCleandobeClean-BoldIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Adobe Clean Light';
+    src: url('fonts/AdobeCleandobeClean-LightIt.eot');
+    src: local('Adobe Clean Light Italic'), local('fonts/AdobeCleandobeClean-LightIt'),
+        url('fonts/AdobeCleandobeClean-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleandobeClean-LightIt.woff') format('woff'),
+        url('fonts/AdobeCleandobeClean-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Adobe Clean Lighten';
+    src: url('fonts/AdobeCleandobeClean-Light.eot');
+    src: local('Adobe Clean Light'), local('fonts/AdobeCleandobeClean-Light'),
+        url('fonts/AdobeCleandobeClean-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleandobeClean-Light.woff') format('woff'),
+        url('fonts/AdobeCleandobeClean-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Adobe Clean Bolden';
+    src: url('fonts/AdobeCleandobeClean-Bold.eot');
+    src: local('Adobe Clean Bold'), local('fonts/AdobeCleandobeClean-Bold'),
+        url('fonts/AdobeCleandobeClean-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleandobeClean-Bold.woff') format('woff'),
+        url('fonts/AdobeCleandobeClean-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Adobe Clean It';
+    src: url('fonts/AdobeCleandobeClean-It.eot');
+    src: local('Adobe Clean Italic'), local('fonts/AdobeCleandobeClean-It'),
+        url('fonts/AdobeCleandobeClean-It.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleandobeClean-It.woff') format('woff'),
+        url('fonts/AdobeCleandobeClean-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Adobe Clean Semi';
+    src: url('fonts/AdobeCleandobeClean-SemiCn.eot');
+    src: local('Adobe Clean SemiCondensed'), local('fonts/AdobeCleandobeClean-SemiCn'),
+        url('fonts/AdobeCleandobeClean-SemiCn.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleandobeClean-SemiCn.woff') format('woff'),
+        url('fonts/AdobeCleandobeClean-SemiCn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Adobe Clean SemiBold';
+    src: url('fonts/AdobeCleandobeClean-BoldSemiCn.eot');
+    src: local('Adobe Clean Bold SemiCondensed'), local('fonts/AdobeCleandobeClean-BoldSemiCn'),
+        url('fonts/AdobeCleandobeClean-BoldSemiCn.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AdobeCleandobeClean-BoldSemiCn.woff') format('woff'),
+        url('fonts/AdobeCleandobeClean-BoldSemiCn.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+::selection {
+    color: black;
+    background: #88888850;
+}
+
+body, button, input {
+    margin: 0;
+    padding: 0;
+    font-family: 'Adobe Clean', Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Adobe Clean SemiBold', Arial, sans-serif;
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input, button, code {
+    outline: none;
+    padding: 3px;
+    background: white;
+    border: none;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: gray;
+}
+input:hover, button:hover {
+    border-color: rgb(173, 173, 173);
+    background: #fdfdfd;
+}
+input:focus, button:focus {
+    color: black;
+    border-color: rgb(173, 173, 173);
+    box-shadow: 0px 0px 5px rgb(163, 163, 163);
+}
+button {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+}
+
+.col-1 {
+    float: left;
+    width: 10%;
+}
+.col-2 {
+    float: left;
+    width: 20%;
+}
+.col-3 {
+    float: left;
+    width: 30%;
+}
+.col-4 {
+    float: left;
+    width: 40%;
+}
+.col-5 {
+    float: left;
+    width: 50%;
+}
+.col-6 {
+    float: left;
+    width: 60%;
+}
+.col-7 {
+    float: left;
+    width: 70%;
+}
+.col-8 {
+    float: left;
+    width: 80%;
+}
+.col-9 {
+    float: left;
+    width: 90%;
+}
+
+.col {
+    float: left;
+    width: 25%;
+}
+.cont, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+}
+a:active {
+    color: darkred;
+}
+
+ul.nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background: linear-gradient(#fff, #f1f1f1);
+    background-color: #f1f1f1;
+    border: 1px solid #999;
+}
+ul.nav li {
+    float: left;
+}
+ul.nav li a {
+    padding: 12px 14px;
+    color: gray;
+    display: block;
+    text-align: center;
+    user-select: none;
+}
+ul.nav li a:hover:not(.active), ul.nav li a:hover:not(.brand) {
+    background: #f1f1f1;
+    text-decoration: none;
+}
+ul.nav li a:active:not(.active), ul.nav li a:active:not(.brand) {
+    box-shadow: inset 0px 1px 3px #777;
+    background: rgb(184, 184, 184);
+    user-select: none;
+}
+ul.nav li a:focus {
+    text-decoration: none;
+    color: black;
+}
+ul.nav li a.active, ul.nav li a.active:hover {
+    background: linear-gradient(#ddd, #999);
+    background-color: #ccc;
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+ul.nav li a.brand, ul.nav li a.brand:hover {
+    background: none;
+    font-weight: 700;
+    color: black;
+    cursor: default;
+}
+ul.nav .right {
+    float: right;
+}
+ul.nav .fixed {
+    position: fixed;
+    top: 0;
+}
+ul.nav input {
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+ul.navlist {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    border: 1px solid #ccc;
+}
+ul.navlist a {
+    display: block;
+    color: black;
+    padding: 10px 12px;
+    background: #fff;
+    user-select: none;
+}
+ul.navlist a:hover:not(.active) {
+    text-decoration: none;
+    background: linear-gradient(#fafafa, #f1f1f1);
+    background-color: #f1f1f1;
+}
+ul.navlist a.active, ul.navlist a.active:hover {
+    background: linear-gradient(#eee, #ccc);
+    background-color: #ccc;
+    text-decoration: none;
+    cursor: default;
+}
+ul.navlist a:focus:not(.active) {
+    text-decoration: none;
+    background: linear-gradient(#ccc, #999);
+    background-color: rgb(161, 161, 161);
+    text-decoration: none;
+    cursor: default;
+}
+ul.navlist .title {
+    padding: 10px 12px;
+    color: gray;
+    font-size: 12px;
+    text-transform: uppercase;
+    user-select: none;
+    text-shadow: 0px 0px 3px gray;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    transition: 0.2s;
+  }
+  #modal .content {
+    background-color: #fafafa;
+    margin: auto;
+    border: 1px solid #ccc;
+    width: 80%;
+    transition: 0.2s;
+    box-shadow: 0px 1px 5px #999;
+  }
+  #modal .body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+  }
+  #modal .footer {
+    background: #f2f2f2;
+    border-top: 1px solid #ccc;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+    margin: 5px;
+    user-select: none;
+  }
+  .close:hover {
+    color: #777;
+    text-decoration: none;
+    cursor: pointer;
+    background: #f1f1f1;
+  }
+  .close:active {
+    background: #ddd;
+    color: #444;
+  }
+
+  #alert {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+  }
